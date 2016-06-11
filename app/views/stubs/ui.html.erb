@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UI scraping test</title>
+</head>
+<body>
+
+<div class="city-area">
+<ul class="city">
+<li>
+<input type="checkbox" name="city[]" value="13101" id="13101" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13101">千代田区(268件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13102" id="13102" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13102">中央区(753件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13103" id="13103" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13103">港区(1,705件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13104" id="13104" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13104">新宿区(1,024件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13105" id="13105" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13105">文京区(456件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13106" id="13106" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13106">台東区(367件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13107" id="13107" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13107">墨田区(361件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13108" id="13108" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13108">江東区(1,038件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13109" id="13109" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13109">品川区(678件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13110" id="13110" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13110">目黒区(627件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13111" id="13111" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13111">大田区(807件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13112" id="13112" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13112">世田谷区(1,527件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13113" id="13113" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13113">渋谷区(762件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13114" id="13114" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13114">中野区(426件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13115" id="13115" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13115">杉並区(778件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13116" id="13116" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13116">豊島区(523件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13117" id="13117" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13117">北区(265件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13118" id="13118" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13118">荒川区(183件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13119" id="13119" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13119">板橋区(602件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13120" id="13120" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13120">練馬区(567件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13121" id="13121" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13121">足立区(448件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13122" id="13122" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13122">葛飾区(354件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13123" id="13123" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13123">江戸川区(440件)</a>
+</li>
+</ul>
+</div>
+
+
+<table class="kensaku" summary="基本検索条件、こだわり検索条件">
+	<tbody><tr>
+		<th colspan="2" class="midashi"><p>基本検索条件</p></th>
+	</tr>
+	<tr>
+		<th><p>価格</p></th>
+		<td>
+			<ul class="w_3">
+				<li>
+					<select size="1" name="pl">
+						<option value="l" ##pl_l##="">下限なし</option>
+						<option value="1" ##pl_1##="">1,000万</option>
+						<option value="2" ##pl_2##="">2,000万</option>
+						<option value="3" ##pl_3##="">3,000万</option>
+						<option value="4" ##pl_4##="">4,000万</option>
+						<option value="5" ##pl_5##="">5,000万</option>
+						<option value="6" ##pl_6##="">6,000万</option>
+						<option value="7" ##pl_7##="">7,000万</option>
+						<option value="8" ##pl_8##="">8,000万</option>
+						<option value="9" ##pl_9##="">9,000万</option>
+					</select>円以上
+				</li>
+				<li>
+					<select size="1" name="ph">
+						<option value="h" ##ph_h##="">上限なし</option>
+						<option value="1" ##ph_1##="">1,000万</option>
+						<option value="2" ##ph_2##="">2,000万</option>
+						<option value="3" ##ph_3##="">3,000万</option>
+						<option value="4" ##ph_4##="">4,000万</option>
+						<option value="5" ##ph_5##="">5,000万</option>
+						<option value="6" ##ph_6##="">6,000万</option>
+						<option value="7" ##ph_7##="">7,000万</option>
+						<option value="8" ##ph_8##="">8,000万</option>
+						<option value="9" ##ph_9##="">9,000万</option>
+					</select>円未満
+				</li>
+				<li>
+					<input type="checkbox" name="pu" value="1" id="pu" ##pu_1##=""><label for="pu">価格未定含む</label>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>専有面積</p></th>
+		<td>
+			<ul class="w_3">
+				<li>
+					<select size="1" name="asl">
+						<option value="l" ##asl_l##="">下限なし</option>
+						<option value="20" ##asl_20##="">20</option>
+						<option value="40" ##asl_40##="">40</option>
+						<option value="50" ##asl_50##="">50</option>
+						<option value="60" ##asl_60##="">60</option>
+						<option value="70" ##asl_70##="">70</option>
+						<option value="80" ##asl_80##="">80</option>
+						<option value="90" ##asl_90##="">90</option>
+						<option value="100" ##asl_100##="">100</option>
+						<option value="120" ##asl_120##="">120</option>
+						<option value="150" ##asl_150##="">150</option>
+					</select>m²以上
+				</li>
+				<li>
+					<select size="1" name="ash">
+						<option value="h" ##ash_h##="">上限なし</option>
+						<option value="20" ##ash_20##="">20</option>
+						<option value="40" ##ash_40##="">40</option>
+						<option value="50" ##ash_50##="">50</option>
+						<option value="60" ##ash_60##="">60</option>
+						<option value="70" ##ash_70##="">70</option>
+						<option value="80" ##ash_80##="">80</option>
+						<option value="90" ##ash_90##="">90</option>
+						<option value="100" ##ash_100##="">100</option>
+						<option value="120" ##ash_120##="">120</option>
+						<option value="150" ##ash_150##="">150</option>
+					</select>m²未満
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>築年数</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input name="yc" type="radio" value="1" id="yc0" ##yc_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;yc=1">新築</a></li>
+				<li><input name="yc" type="radio" value="3" id="yc1" ##yc_3##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;yc=3">3年以内</a></li>
+				<li><input name="yc" type="radio" value="5" id="yc2" ##yc_5##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;yc=5">5年以内</a></li>
+				<li><input name="yc" type="radio" value="10" id="yc3" ##yc_10##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;yc=10">10年以内</a></li>
+				<li><input name="yc" type="radio" value="15" id="yc4" ##yc_15##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;yc=15">15年以内</a></li>
+				<li><input name="yc" type="radio" value="-1" id="yc-1" ##yc_-1##=""><label for="yc-1">指定なし</label></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>最寄駅徒歩分</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input name="th" type="radio" value="5" id="th1" ##th_5##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;th=5">5分以内</a></li>
+				<li><input name="th" type="radio" value="10" id="th2" ##th_10##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;th=10">10分以内</a></li>
+				<li><input name="th" type="radio" value="15" id="th3" ##th_15##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;th=15">15分以内</a></li>
+				<li><input name="th" type="radio" value="-1" id="th-1" ##th_-1##=""><label for="th-1">指定なし</label></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>間取り</p></th>
+		<td>
+			<ul class="madori">
+				<li><input type="checkbox" name="md[]" value="1" id="md1" ##md_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;md[]=1">1R・1K・1DK</a></li>
+				<li><input type="checkbox" name="md[]" value="2" id="md2" ##md_2##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;md[]=2">1LDK・2K・2DK</a></li>
+				<li><input type="checkbox" name="md[]" value="3" id="md3" ##md_3##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;md[]=3">2LDK・3K・3DK</a></li>
+				<li><input type="checkbox" name="md[]" value="4" id="md4" ##md_4##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;md[]=4">3LDK・4K・4DK</a></li>
+				<li><input type="checkbox" name="md[]" value="5" id="md5" ##md_5##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;md[]=5">4LDK以上</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>画像・図面</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="gz" value="1" id="gz" ##gz_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;gz=1">画像あり</a></li>
+				<li><input type="checkbox" name="zm" value="1" id="zm" ##zm_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;zm=1">図面あり</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" class="midashi"><p>こだわり検索条件</p></th>
+	</tr>
+	<tr>
+		<th><p>部屋の位置</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="f1" value="1" id="f1" ##f1_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;f1=1">1階のみ</a></li>
+				<li><input type="checkbox" name="f2" value="1" id="f2" ##f2_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;f2=1">2階以上のみ</a></li>
+				<li><input type="checkbox" name="op[]" value="d332" id="d332" ##op_d332##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d332">角部屋</a></li>
+				<li><input type="checkbox" name="op[]" value="d344" id="d344" ##op_d344##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d344">最上階</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>設備</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="pk" value="1" id="pk" ##pk_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;pk=1">駐車場あり</a></li>
+				<li><input type="checkbox" name="op[]" value="d227" id="d227" ##op_d227##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d227">都市ガス</a></li>
+				<li><input type="checkbox" name="op[]" value="d300" id="d300" ##op_d300##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d300">宅配ボックス</a></li>
+				<li><input type="checkbox" name="op[]" value="d341" id="d341" ##op_d341##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d341">24時間換気システム</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>環境</p></th>
+		<td>
+			<ul class="w_2">
+				<li><input type="checkbox" name="slw" value="1" id="slw" ##slw_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;slw=1">低層（4階以下）</a></li>
+				<li><input type="checkbox" name="stw" value="1" id="stw" ##stw_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;stw=1">タワーマンション（20階以上）</a></li>
+				<li><input type="checkbox" name="slg" value="1" id="slg" ##slg_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;slg=1">大規模マンション（総戸数200戸以上）</a></li>
+				<li><input type="checkbox" name="op[]" value="d324" id="d324" ##op_d324##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d324">バリアフリー</a></li>
+				<li><input type="checkbox" name="op[]" value="d325" id="d325" ##op_d325##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d325">メゾネット</a></li>
+				<li><input type="checkbox" name="op[]" value="d337" id="d337" ##op_d337##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d337">二世帯向き</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>条件</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="qc" value="1" id="qc" ##qc_1##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;qc=1">即入居可</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>バス・洗面</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="op[]" value="d278" id="d278" ##op_d278##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d278">浴室乾燥機</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>セキュリティ</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="op[]" value="d342" id="d342" ##op_d342##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d342">24時間セキュリティ</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>冷暖房</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="op[]" value="d238" id="d238" ##op_d238##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d238">床暖房</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>バルコニー</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="op[]" value="d286" id="d286" ##op_d286##=""><a href="./?act=l&amp;type=12&amp;pref=13&amp;stype=d&amp;op[]=d286">ルーフバルコニー</a></li>
+			</ul>
+		</td>
+	</tr>
+<!---->
+	<tr>
+		<td colspan="2">
+			<p class="text_center">
+				<button type="submit" class="btn-img" name="submitbtn" value="l"><img src="/search/images/kensaku_buton.jpg" alt="検索" width="85" height="30"></button>
+			</p>
+		</td>
+	</tr>
+<!-- -->
+<!--##act_l##
+	<tr>
+		<td colspan="2">
+			<p class="text_center">
+				<a href="javascript:history.back()"><img src="/search/images/buck_buton.jpg" alt="前の画面に戻る" width="136" height="30" /></a>　<button type="submit" class="btn-img" name="submitbtn" value="l"><img src="/search/images/kensaku_buton.jpg" alt="検索" width="85" height="30" /></button>
+			</p>
+		</td>
+	</tr>
+<!-- -->
+</tbody></table>
+
+
+</body>
+</html>

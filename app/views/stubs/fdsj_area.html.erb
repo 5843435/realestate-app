@@ -1,0 +1,750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="robots" content="noarchive">
+
+<meta name="description" content="東京都の売マンション（新築・中古）をエリア検索するなら「不動産ジャパン」！エリア検索、路線検索、こだわり条件検索もでき、たくさんの物件情報からあなたにぴったりの物件が探せます。" />
+<meta name="keywords" content="不動産,不動産取引,基礎知識,物件情報,不動産流通4団体,国土交通省,不動産流通推進センター,不動産ジャパン" />
+
+
+	<title>【不動産ジャパン】エリア検索：東京都の売マンション（新築・中古）を探す</title>
+
+<link href="/css/import.css" rel="stylesheet" type="text/css" />
+<link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="/css/top_bg.css" rel="stylesheet" type="text/css" />
+<link href="/css/top1404.css" rel="stylesheet" type="text/css" />
+<link href="/css/search_css/import_search.css" rel="stylesheet" type="text/css" />
+<script src="/js/AC_RunActiveContent.js" type="text/javascript"></script>
+<link href="/system/search_css/base.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--all start-->
+<div class="all">
+<div id="head" class="crearfix">
+<span id="site_explanation">安心・安全な不動産取引をサポートする総合情報サイト～物件選びからトラブル対応まで【不動産ジャパン】</span>
+<p class="font_size"><img src="/images/menu/size.gif" alt="文字サイズ" width="72" height="19" />
+<a href="#" onclick="document.body.style.fontSize='75%'"><img src="/images/menu/s.jpg" alt="小" width="24" height="24" /></a>
+<a href="#" onclick="document.body.style.fontSize='81.25%'"><img src="/images/menu/m.jpg" alt="中" width="24" height="24" /></a>
+<a href="#" onclick="document.body.style.fontSize='100%'"><img src="/images/menu/l.jpg" alt="大" width="24" height="24" /></a></p>
+      
+			<!--サブナビ-->
+    <div class="subu_manu"><h2><a href="http://www.fudousan.or.jp/"><img src="/images/menu/rogo_01.gif" alt="不動産ジャパン" width="221" height="45" /></a></h2>
+            <ul>
+              <li class="no_line"><a href="/others/aboutus.html">不動産ジャパンについて</a></li>
+              <li><a href="/others/sitemap.html">サイトマップ</a></li>
+              <li><a href="/inquiry/index.html">物件情報以外のお問合せ</a></li>
+              <li><a href="http://www.kindaika.jp" target="_blank">運営：公益財団法人不動産流通推進センター</a></li>
+              <li><a href="/association/index.html">参加団体</a></li>
+            </ul>
+    </div>
+	      <!--サブナビ　ここまで-->
+		  
+		  <!--メインナビ-->
+		  <ul id="pulldown_menu">
+		   <li id="con1"><a href="#"><span>不動産検索・不動産会社情報</span></a><ul>
+		   <li id="con1_1"><a href="/top/buy.html#buy"><span>不動産を探す【買う】</span></a></li>
+		   <li id="con1_2"><a href="/top/rent.html#rent"><span>不動産を探す【借りる】</span></a></li>
+		   <li id="con1_3"><a href="/search/kaisya/index.html"><span>不動産会社検索サービス</span></a></li>
+		   <li id="con1_4"><a href="/report/index.html"><span>街の不動産会社レポート</span></a></li>
+		   <li id="con1_5"><a href="/association/index.html"><span>業界団体を調べる</span></a></li>
+		   <li id="con1_6"><a href="/gyoseiinfo/index.html"><span>行政処分情報</span></a></li>
+		   </ul>
+		   </li>
+		   <li id="con2"><a href="#"><span>住まい探しのお役立ち情報</span></a><ul>
+		   <li id="con2_1"><a href="/jyukankyo/index.html"><span>住環境を調べる</span></a></li>
+		   <li id="con2_2"><a href="/jyukankyo/jyosei/index.html"><span>住宅関連助成など</span></a></li>
+		   <li id="con2_3"><a href="/jyukankyo/child/index.html"><span>子育て支援サービス</span></a></li>
+		   <li id="con2_4"><a href="/jyukankyo/bosai/index.html"><span>防災関連情報</span></a></li>
+		   <li id="con2_5"><a href="/jyukankyo/bohan/index.html"><span>防犯関連情報</span></a></li>
+		   <li id="con2_6"><a href="/jyukankyo/jichitai/index.html"><span>各自治体の情報</span></a></li>
+		   <li id="con2_7"><a href="/trend/index.html"><span>相場・取引動向</span></a></li>
+		   </ul>
+		   </li>
+		   <li id="con3"><a href="#"><span>住まい探し講座</span></a><ul>
+		   <li id="con3_1"><a href="/kiso/buy/index.html"><span>基礎知識【買う】</span></a></li>
+		   <li id="con3_2"><a href="/kiso/rent/index.html"><span>基礎知識【借りる】</span></a></li>
+		   <li id="con3_3"><a href="/kiso/sale/index.html"><span>基礎知識【売る】</span></a></li>
+		   <li id="con3_4"><a href="/kiso/lease/index.html"><span>基礎知識【貸す】</span></a></li>
+		   <li id="con3_7"><a href="/kiso/buy/index.html#reform"><span>基礎知識【リフォーム】</span></a></li>
+		   <li id="con3_5"><a href="/trouble/index.html"><span>住まいのトラブル相談室</span></a></li>
+		   <li id="con3_6"><a href="/tools/index.html"><span>不動産便利ツール</span></a></li>
+		   </ul>
+		   </li>
+		   <li id="con4"><a href="/topics/index.html"><span>不動産トピックス</span></a></li>
+		   <li id="con5"><a href="http://www.fudousan.or.jp/"><span>トップ</span></a></li>
+		  </ul>			  
+		  <!--メインナビ　ここまで-->
+		  
+		  <!--tabナビ-->
+		  <div id="tab_nav">
+		  <ul id="tab_menu">
+		   <li id="cot1"><a href="/top/buy.html"><span>買うトップ</span></a></li>
+		   <li id="cot2"><a href="/top/rent.html"><span>借りるトップ</span></a></li>
+		   <li id="cot3"><a href="/top/sale.html"><span>売るトップ</span></a></li>
+		   <li id="cot4"><a href="/top/lease.html"><span>貸すトップ</span></a></li>
+		   <li id="cot5"><a href="#"><span>マイリスト</span></a><ul>
+		   <li id="cot5_1"><a href="/system/?act=v&amp;type=19"><span>マイリスト：買う</span></a></li>
+		   <li id="cot5_2"><a href="/system/?act=v&amp;type=39"><span>マイリスト：借りる</span></a></li>
+		   </ul>
+		   </li>
+		   <li id="cot6"><a href="/check/index.html"><span>不動産力チェック</span></a></li>
+		   <li id="cot7"><a href="/keywords/index.html"><span>話題の不動産キーワード</span></a>
+	        </li>
+		  </ul>		 
+		  </div> 
+		  <!--tabナビ　ここまで-->		
+  		  
+</div><!--head end-->
+</div>
+<!--all end-->
+
+		<!--all_cont start-->
+		<div class="all_cont">
+			<!--コンテンツstart-->
+			<div id="cont">
+				<!-- 動的コンテンツ -->
+				<p id="pankuzu">
+<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/" itemprop="url"><nobr><span itemprop="title">トップ</span></nobr></a>
+</span>＞<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="http://www.fudousan.or.jp/top/buy.html" itemprop="url"><nobr><span itemprop="title">【買う】トップ</span></nobr></a>
+</span>＞<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="./?act=m&type=12" itemprop="url"><nobr><span itemprop="title">不動産物件検索 ： マンション（新築・中古）  </span></nobr></a>
+</span>＞<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<nobr><span itemprop="title">エリア検索（東京都）</span></nobr>
+</span>
+</p>
+<div class="content-title"><div class="content-title-img"></div><div class="content-title-text">
+<h1>エリア検索：東京都の売マンション（新築・中古）を探す</h1>
+</div></div>
+			<!--メニュー選択 start-->
+			<table class="menu_selection" summary="メニュー選択">
+				<tr>
+					<td>
+						<ul>
+							<!--
+							<li>新築マンション（<a href="./?act=m&type=11">分譲</a>・<a href="./?act=m&type=12">仲介</a>）</li>
+							<li><a href="./?act=m&type=12">中古マンション</a></li>
+							<li>新築一戸建て（<a href="./?act=m&type=13">分譲</a>・<a href="./?act=m&type=14">仲介</a>）</li>
+							<li><a href="./?act=m&type=14">中古一戸建て</a></li>
+							<li>土地（<a href="./?act=m&type=15">分譲</a>・<a href="./?act=m&type=16">仲介</a>）</li>
+							<li><a href="./?act=m&type=17">事業用物件</a>（事務所・店舗など）</li>
+							<li class="icon_q"><a href="/search/buy/chigai.html" target="_blank">分譲と仲介の違いについて</a></li>
+							-->
+							<li><a href="./?act=f&type=12&pref=13&stype=l">マンション（新築・中古）</a></li>
+							<li><a href="./?act=f&type=14&pref=13&stype=l">一戸建て（新築・中古）</a></li>
+							<li><a href="./?act=f&type=16&pref=13&stype=l">土地</a></li>
+							<li><a href="./?act=f&type=11&pref=13&stype=l">分譲マンション</a>・<a href="./?act=f&type=13&pref=13&stype=l">分譲一戸建て</a>・<a href="./?act=f&type=15&pref=13&stype=l">分譲土地</a></li>
+							<li><a href="./?act=f&type=17&pref=13&stype=l">事業用物件（事務所・店舗など）</a></li>
+							<li class="icon_q"><a href="/search/buy/bunjyo.html" target="_blank">分譲とは</a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<!--メニュー選択 end-->
+
+<form name="frmArea" method="get" action="./" onsubmit="return checkForm(document.forms['frmArea']);">
+<input type="hidden" name="act" id="act" value="l" />
+<input type="hidden" name="type" id="type" value="12" />
+<input type="hidden" name="pref" id="pref" value="13" />
+<input type="hidden" name="stype" id="stype" value="l" />
+<script type="text/javascript"><!--
+function checkForm(frm) {
+ var msgs = new Array();
+ checkArea(frm,msgs);
+ checkCondition(frm,msgs);
+ if(msgs.length > 0) {
+  var str = '入力条件を確認してください。';
+  for (i = 0; i < msgs.length; i++) {
+    str += '\n  ・' + msgs[i];
+  }
+  alert(str);
+  return false;
+ } else {
+  return true;
+ }
+}
+function checkArea(frm,msgs) {
+ var city = document.getElementsByName('city[]');
+ if(city.length >= 1) {
+  for(var i=0;i<city.length; i++) if(city[i].checked) return;
+ } else {
+  if(city.checked) return;
+ }
+ msgs.push('市区町村を選択してください');
+}
+// --></script>
+<h4 class="title_area">エリア検索：東京都　<span class="xx-small none">ご希望の市区町村を選択してください。（複数選択可）</span></h4>
+<table class="area" summary="エリア選択">
+<tr>
+<th><p>２３区</p></th>
+</tr>
+<tr>
+<td>
+<ul class="city">
+<li>
+<input type="checkbox" name="city[]" value="13101" id="13101" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13101">千代田区(268件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13102" id="13102" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13102">中央区(753件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13103" id="13103" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13103">港区(1,705件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13104" id="13104" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13104">新宿区(1,024件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13105" id="13105" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13105">文京区(456件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13106" id="13106" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13106">台東区(367件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13107" id="13107" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13107">墨田区(361件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13108" id="13108" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13108">江東区(1,038件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13109" id="13109" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13109">品川区(678件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13110" id="13110" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13110">目黒区(627件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13111" id="13111" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13111">大田区(807件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13112" id="13112" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13112">世田谷区(1,527件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13113" id="13113" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13113">渋谷区(762件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13114" id="13114" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13114">中野区(426件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13115" id="13115" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13115">杉並区(778件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13116" id="13116" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13116">豊島区(523件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13117" id="13117" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13117">北区(265件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13118" id="13118" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13118">荒川区(183件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13119" id="13119" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13119">板橋区(602件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13120" id="13120" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13120">練馬区(567件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13121" id="13121" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13121">足立区(448件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13122" id="13122" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13122">葛飾区(354件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13123" id="13123" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13123">江戸川区(440件)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th><p>その他の地域</p></th>
+</tr>
+<tr>
+<td>
+<ul class="city">
+<li>
+<input type="checkbox" name="city[]" value="13201" id="13201" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13201">八王子市(321件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13202" id="13202" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13202">立川市(124件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13203" id="13203" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13203">武蔵野市(164件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13204" id="13204" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13204">三鷹市(117件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13205" id="13205" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13205">青梅市(55件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13206" id="13206" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13206">府中市(232件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13207" id="13207" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13207">昭島市(36件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13208" id="13208" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13208">調布市(210件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13209" id="13209" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13209">町田市(158件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13210" id="13210" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13210">小金井市(53件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13211" id="13211" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13211">小平市(81件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13212" id="13212" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13212">日野市(74件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13213" id="13213" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13213">東村山市(89件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13214" id="13214" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13214">国分寺市(56件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13215" id="13215" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13215">国立市(46件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13218" id="13218" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13218">福生市(24件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13219" id="13219" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13219">狛江市(46件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13220" id="13220" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13220">東大和市(36件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13221" id="13221" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13221">清瀬市(19件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13222" id="13222" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13222">東久留米市(29件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13223" id="13223" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13223">武蔵村山市(8件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13224" id="13224" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13224">多摩市(130件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13225" id="13225" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13225">稲城市(46件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13227" id="13227" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13227">羽村市(15件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13228" id="13228" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13228">あきる野市(1件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13229" id="13229" />
+<a href="./?act=l&type=12&pref=13&stype=d&city[]=13229">西東京市(104件)</a>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13303" id="13303" disabled="disabled"/>
+<span class="gray">西多摩郡　瑞穂町(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13305" id="13305" disabled="disabled"/>
+<span class="gray">西多摩郡　日の出町(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13307" id="13307" disabled="disabled"/>
+<span class="gray">西多摩郡　檜原村(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13308" id="13308" disabled="disabled"/>
+<span class="gray">西多摩郡　奥多摩町(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13361" id="13361" disabled="disabled"/>
+<span class="gray">大島町(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13362" id="13362" disabled="disabled"/>
+<span class="gray">利島村(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13363" id="13363" disabled="disabled"/>
+<span class="gray">新島村(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13364" id="13364" disabled="disabled"/>
+<span class="gray">神津島村(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13381" id="13381" disabled="disabled"/>
+<span class="gray">三宅島　三宅村(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13382" id="13382" disabled="disabled"/>
+<span class="gray">御蔵島村(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13401" id="13401" disabled="disabled"/>
+<span class="gray">八丈島　八丈町(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13402" id="13402" disabled="disabled"/>
+<span class="gray">青ヶ島村(0件)</span>
+</li>
+<li>
+<input type="checkbox" name="city[]" value="13421" id="13421" disabled="disabled"/>
+<span class="gray">小笠原村(0件)</span>
+</li>
+</ul></td>
+</tr>
+</table>
+<a name="a2" id="a2"></a>
+<script type="text/javascript"><!--
+	function checkCondition(frm,msgs) {
+		if(parseInt(frm.pl.value) >= parseInt(frm.ph.value)) msgs.push('下限価格よりも上限価格を大きく設定してください');
+		if(parseFloat(frm.asl.value) >= parseFloat(frm.ash.value)) msgs.push('下限専有面積よりも上限専有面積を大きく設定してください');
+	}
+// --></script>
+<!--検索条件　start-->
+<h4 class="title_kensaku">検索条件　<span class="xx-small none">検索条件を選択してください。</span></h4>
+<table class="kensaku" summary="基本検索条件、こだわり検索条件">
+	<tr>
+		<th colspan="2" class="midashi"><p>基本検索条件</p></th>
+	</tr>
+	<tr>
+		<th><p>価格</p></th>
+		<td>
+			<ul class="w_3">
+				<li>
+					<select size="1" name="pl">
+						<option value="l" ##pl_l##>下限なし</option>
+						<option value="1" ##pl_1##>1,000万</option>
+						<option value="2" ##pl_2##>2,000万</option>
+						<option value="3" ##pl_3##>3,000万</option>
+						<option value="4" ##pl_4##>4,000万</option>
+						<option value="5" ##pl_5##>5,000万</option>
+						<option value="6" ##pl_6##>6,000万</option>
+						<option value="7" ##pl_7##>7,000万</option>
+						<option value="8" ##pl_8##>8,000万</option>
+						<option value="9" ##pl_9##>9,000万</option>
+					</select>円以上
+				</li>
+				<li>
+					<select size="1" name="ph">
+						<option value="h" ##ph_h##>上限なし</option>
+						<option value="1" ##ph_1##>1,000万</option>
+						<option value="2" ##ph_2##>2,000万</option>
+						<option value="3" ##ph_3##>3,000万</option>
+						<option value="4" ##ph_4##>4,000万</option>
+						<option value="5" ##ph_5##>5,000万</option>
+						<option value="6" ##ph_6##>6,000万</option>
+						<option value="7" ##ph_7##>7,000万</option>
+						<option value="8" ##ph_8##>8,000万</option>
+						<option value="9" ##ph_9##>9,000万</option>
+					</select>円未満
+				</li>
+				<li>
+					<input type="checkbox" name="pu" value="1" id="pu" ##pu_1##/><label for="pu">価格未定含む</label>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>専有面積</p></th>
+		<td>
+			<ul class="w_3">
+				<li>
+					<select size="1" name="asl">
+						<option value="l" ##asl_l##>下限なし</option>
+						<option value="20" ##asl_20##>20</option>
+						<option value="40" ##asl_40##>40</option>
+						<option value="50" ##asl_50##>50</option>
+						<option value="60" ##asl_60##>60</option>
+						<option value="70" ##asl_70##>70</option>
+						<option value="80" ##asl_80##>80</option>
+						<option value="90" ##asl_90##>90</option>
+						<option value="100" ##asl_100##>100</option>
+						<option value="120" ##asl_120##>120</option>
+						<option value="150" ##asl_150##>150</option>
+					</select>m&sup2;以上
+				</li>
+				<li>
+					<select size="1" name="ash">
+						<option value="h" ##ash_h##>上限なし</option>
+						<option value="20" ##ash_20##>20</option>
+						<option value="40" ##ash_40##>40</option>
+						<option value="50" ##ash_50##>50</option>
+						<option value="60" ##ash_60##>60</option>
+						<option value="70" ##ash_70##>70</option>
+						<option value="80" ##ash_80##>80</option>
+						<option value="90" ##ash_90##>90</option>
+						<option value="100" ##ash_100##>100</option>
+						<option value="120" ##ash_120##>120</option>
+						<option value="150" ##ash_150##>150</option>
+					</select>m&sup2;未満
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>築年数</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input name="yc" type="radio" value="1" id="yc0" ##yc_1## /><a href="./?act=l&type=12&pref=13&stype=d&yc=1">新築</a></li>
+				<li><input name="yc" type="radio" value="3" id="yc1" ##yc_3## /><a href="./?act=l&type=12&pref=13&stype=d&yc=3">3年以内</a></li>
+				<li><input name="yc" type="radio" value="5" id="yc2" ##yc_5## /><a href="./?act=l&type=12&pref=13&stype=d&yc=5">5年以内</a></li>
+				<li><input name="yc" type="radio" value="10" id="yc3" ##yc_10## /><a href="./?act=l&type=12&pref=13&stype=d&yc=10">10年以内</a></li>
+				<li><input name="yc" type="radio" value="15" id="yc4" ##yc_15## /><a href="./?act=l&type=12&pref=13&stype=d&yc=15">15年以内</a></li>
+				<li><input name="yc" type="radio" value="-1" id="yc-1" ##yc_-1## /><label for="yc-1">指定なし</label></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>最寄駅徒歩分</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input name="th" type="radio" value="5" id="th1" ##th_5##/><a href="./?act=l&type=12&pref=13&stype=d&th=5">5分以内</a></li>
+				<li><input name="th" type="radio" value="10" id="th2"  ##th_10##/><a href="./?act=l&type=12&pref=13&stype=d&th=10">10分以内</a></li>
+				<li><input name="th" type="radio" value="15" id="th3"  ##th_15##/><a href="./?act=l&type=12&pref=13&stype=d&th=15">15分以内</a></li>
+				<li><input name="th" type="radio" value="-1" id="th-1"  ##th_-1##/><label for="th-1">指定なし</label></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>間取り</p></th>
+		<td>
+			<ul class="madori">
+				<li><input type="checkbox" name="md[]" value="1" id="md1" ##md_1##/><a href="./?act=l&type=12&pref=13&stype=d&md[]=1">1R・1K・1DK</a></li>
+				<li><input type="checkbox" name="md[]" value="2" id="md2" ##md_2##/><a href="./?act=l&type=12&pref=13&stype=d&md[]=2">1LDK・2K・2DK</a></li>
+				<li><input type="checkbox" name="md[]" value="3" id="md3" ##md_3##/><a href="./?act=l&type=12&pref=13&stype=d&md[]=3">2LDK・3K・3DK</a></li>
+				<li><input type="checkbox" name="md[]" value="4" id="md4" ##md_4##/><a href="./?act=l&type=12&pref=13&stype=d&md[]=4">3LDK・4K・4DK</a></li>
+				<li><input type="checkbox" name="md[]" value="5" id="md5" ##md_5##/><a href="./?act=l&type=12&pref=13&stype=d&md[]=5">4LDK以上</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>画像・図面</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="gz" value="1" id="gz" ##gz_1##/><a href="./?act=l&type=12&pref=13&stype=d&gz=1">画像あり</a></li>
+				<li><input type="checkbox" name="zm" value="1" id="zm" ##zm_1##/><a href="./?act=l&type=12&pref=13&stype=d&zm=1">図面あり</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" class="midashi"><p>こだわり検索条件</p></th>
+	</tr>
+	<tr>
+		<th><p>部屋の位置</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="f1" value="1" id="f1" ##f1_1##/><a href="./?act=l&type=12&pref=13&stype=d&f1=1">1階のみ</a></li>
+				<li><input type="checkbox" name="f2" value="1" id="f2" ##f2_1##/><a href="./?act=l&type=12&pref=13&stype=d&f2=1">2階以上のみ</a></li>
+				<li><input type="checkbox" name="op[]" value="d332" id="d332" ##op_d332##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d332">角部屋</a></li>
+				<li><input type="checkbox" name="op[]" value="d344" id="d344" ##op_d344##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d344">最上階</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>設備</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="pk" value="1" id="pk" ##pk_1##/><a href="./?act=l&type=12&pref=13&stype=d&pk=1">駐車場あり</a></li>
+				<li><input type="checkbox" name="op[]" value="d227" id="d227" ##op_d227##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d227">都市ガス</a></li>
+				<li><input type="checkbox" name="op[]" value="d300" id="d300" ##op_d300##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d300">宅配ボックス</a></li>
+				<li><input type="checkbox" name="op[]" value="d341" id="d341" ##op_d341##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d341">24時間換気システム</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>環境</p></th>
+		<td>
+			<ul class="w_2">
+				<li><input type="checkbox" name="slw" value="1" id="slw" ##slw_1##/><a href="./?act=l&type=12&pref=13&stype=d&slw=1">低層（4階以下）</a></li>
+				<li><input type="checkbox" name="stw" value="1" id="stw" ##stw_1##/><a href="./?act=l&type=12&pref=13&stype=d&stw=1">タワーマンション（20階以上）</a></li>
+				<li><input type="checkbox" name="slg" value="1" id="slg" ##slg_1##/><a href="./?act=l&type=12&pref=13&stype=d&slg=1">大規模マンション（総戸数200戸以上）</a></li>
+				<li><input type="checkbox" name="op[]" value="d324" id="d324" ##op_d324##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d324">バリアフリー</a></li>
+				<li><input type="checkbox" name="op[]" value="d325" id="d325" ##op_d325##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d325">メゾネット</a></li>
+				<li><input type="checkbox" name="op[]" value="d337" id="d337" ##op_d337##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d337">二世帯向き</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>条件</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="qc" value="1" id="qc" ##qc_1##/><a href="./?act=l&type=12&pref=13&stype=d&qc=1">即入居可</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>バス・洗面</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="op[]" value="d278" id="d278" ##op_d278##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d278">浴室乾燥機</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>セキュリティ</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="op[]" value="d342" id="d342" ##op_d342##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d342">24時間セキュリティ</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>冷暖房</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="op[]" value="d238" id="d238" ##op_d238##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d238">床暖房</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th><p>バルコニー</p></th>
+		<td>
+			<ul class="w_3">
+				<li><input type="checkbox" name="op[]" value="d286" id="d286" ##op_d286##/><a href="./?act=l&type=12&pref=13&stype=d&op[]=d286">ルーフバルコニー</a></li>
+			</ul>
+		</td>
+	</tr>
+<!---->
+	<tr>
+		<td colspan="2">
+			<p class="text_center">
+				<button type="submit" class="btn-img" name="submitbtn" value="l"><img src="/search/images/kensaku_buton.jpg" alt="検索" width="85" height="30" /></button>
+			</p>
+		</td>
+	</tr>
+<!-- -->
+<!--##act_l##
+	<tr>
+		<td colspan="2">
+			<p class="text_center">
+				<a href="javascript:history.back()"><img src="/search/images/buck_buton.jpg" alt="前の画面に戻る" width="136" height="30" /></a>　<button type="submit" class="btn-img" name="submitbtn" value="l"><img src="/search/images/kensaku_buton.jpg" alt="検索" width="85" height="30" /></button>
+			</p>
+		</td>
+	</tr>
+<!-- -->
+</table>
+<!--検索条件 end-->
+
+<link href="/system/search_css/bottom-toolbar.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript"><!--
+	$(function(){
+		$(".bottom-toolbar").slideDown();
+	});
+// --></script>
+<div class="bottom-toolbar text_center">
+	<!--
+	<div class="bottom-button width-m">
+		<a href="javascript:if(checkForm(document.forms['frmArea'],true)){var f=document.forms['frmArea'];f.act.value='f';f.stype.value='e';f.submit();}">駅を選択</a>
+	</div>
+	<!-- -->
+	<!--
+	<div class="bottom-button width-l">
+		<a href="##mylisturl##">検索条件をマイリストに保存</a>
+	</div>
+	<!-- -->
+	<div class="bottom-button width-m">
+		<a href="#a2">検索条件を追加</a>
+	</div>
+	<div class="bottom-button width-s">
+		<a href="javascript:if(checkForm(document.forms['frmArea']))document.forms['frmArea'].submit();">検索</a>
+	</div>
+</div>
+
+</form>
+				<!-- 動的コンテンツ ここまで -->
+
+				<!--ページトップへ start-->
+				<div class="page_top">
+				<p><a href="#">▲ ページトップへ</a></p>
+				</div><!--ページトップへ end-->
+			</div><!--コンテンツend-->
+		</div><!--all_cont end-->
+
+<!--all_cont start-->
+<div class="all_cont top_bt">
+<!--フッター start-->
+<div id="foot">
+     <ul><li><a href="http://www.fudousan.or.jp/">トップ </a>｜ </li>
+     <li><a href="/top/buy.html">買うトップ</a> ｜ </li>
+     <li><a href="/top/rent.html">借りるトップ</a> ｜ </li>
+     <li><a href="/top/sale.html">売るトップ</a> ｜ </li>
+     <li><a href="/top/lease.html">貸すトップ</a> ｜ </li>
+     <li>マイリスト（<a href="/system/?act=v&amp;type=19">買う</a>・<a href="/system/?act=v&amp;type=39">借りる</a>） ｜ </li>
+     <li><a href="/topics/index.html">不動産トピックス</a> ｜ </li>
+     <li><a href="/check/index.html">不動産力チェック</a> ｜ </li>
+     <li><a href="/keywords/index.html">話題の不動産キーワード</a></li>
+     </ul>
+	 <ul><li><a href="/others/aboutus.html">不動産ジャパンについて</a> ｜ </li>
+	 <li><a href="/others/link.html">リンクについて</a> ｜ </li>
+	 <li><a href="/others/sitemap.html">サイトマップ</a> ｜ </li>
+	 <li><a href="/others/kiyaku.html">ご利用規約</a> ｜ </li>
+	 <li><a href="/others/privacy.html">個人情報保護指針</a> ｜ </li>
+	 <li><a href="/inquiry/index.html">物件情報以外のお問合せ</a></li>
+	 </ul>
+	 <ul>
+	   <li><a href="/mlit/index.html">国土交通省最新の動き</a> ｜ </li>
+	   <li><a href="/company/index.html">不動産会社の皆様へ</a> ｜ </li>
+	 <li><a href="http://www.kindaika.jp/center" target="_blank">（公財）不動産流通推進センター</a> ｜ </li>
+	 <li><a href="/association/index.html">参加団体</a></li>
+	 </ul>
+<address>Copyright 2015 THE REAL ESTATE TRANSACTION PROMOTION CENTER FOUNDATION All Rights Reserved.</address>
+</div><!--フッター end-->
+</div>
+<!--all_cont end-->
+
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+site_url:
+  fdsj:
+    base: 'http://www.fudousan.or.jp/'
+    area:
+      tokyo: 'system/?act=f&type=12&pref=13&stype=l'
+  yahf:
+    base: 'http://realestate.yahoo.co.jp/'
+    area:
+      tokyo: 'used/mansion/03/13/'
+  app:
+    base: 'http://localhost:3000/'

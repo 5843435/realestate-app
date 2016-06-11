@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bid: MyString
+  site_slug: MyString
+  name: MyString
+  addr: MyString
+  builded_at: 
+  floor_plan: MyString
+  occupied_area: 
+  trafic_info: MyString
+  detail_url: MyString
+  search_cond_id: 
+  searched_at: 2016-04-24 11:39:04
+
+two:
+  bid: MyString
+  site_slug: MyString
+  name: MyString
+  addr: MyString
+  builded_at: 
+  floor_plan: MyString
+  occupied_area: 
+  trafic_info: MyString
+  detail_url: MyString
+  search_cond_id: 
+  searched_at: 2016-04-24 11:39:04
