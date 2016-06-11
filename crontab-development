@@ -1,0 +1,1 @@
+30 * * * * /bin/bash -lc 'source /etc/profile.d/rbenv.sh && cd /vagrant/realestate-app && bundle exec rake web:spy RAILS_ENV=development'
