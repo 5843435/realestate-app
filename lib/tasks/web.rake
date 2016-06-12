@@ -31,4 +31,11 @@ namespace :web do
         end
       end
     end
+
+    desc "check application environtmen and settings at once."
+
+    task :check_env => :environment do
+        puts Rails.env
+        puts Realestate.count()
+    end
 end

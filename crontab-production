@@ -1,1 +1,1 @@
-01 04 * * * /bin/bash -lc 'source /etc/profile.d/rbenv.sh && cd /home/azureuser/realestate-app && bundle exec rake web:spy RAILS_ENV=production'
+03 00,06,12,18 * * * /bin/bash -lc 'source /etc/profile.d/rbenv.sh && cd /home/azureuser/realestate-app && bundle exec rake web:spy RAILS_ENV=production'
