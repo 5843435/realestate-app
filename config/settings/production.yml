@@ -8,4 +8,4 @@ site_url:
     area:
       tokyo: 'used/mansion/03/13/'
   app:
-    base: 'http://localhost:3000/'
+    base: 'http://realstate-lxls5yu1.cloudapp.net:3000/'
