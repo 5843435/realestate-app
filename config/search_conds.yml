@@ -1,11 +1,15 @@
-# - :site_slug: 'yahf'
-#   :building_type: 2
-#   :area1: '13'  # 都道府県
-#   :area2: '13101,13102' # 市区町村
+- :site_slug: 'yahf'
+  :building_type: 2
+  :area1: '13'  # 都道府県
+  :area2: '13101,13102' # 市区町村
+  :areasquare_min: '40'
+  :minutes_to_take: '10'
 - :site_slug: 'fdsj'
   :building_type: 2 # 物件種別
   :area1: '13'  # 都道府県
   :area2: '13101,13102'  # 市区町村
+  :areasquare_min: '40'
+  :minutes_to_take: '10'
 # - :site_slug: 'yahf'
 #   :building_type: 2
 #   :area1: '13'  # 都道府県
